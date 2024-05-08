@@ -1,0 +1,5 @@
+random 随机模块
+1、导入
+import random(相当于C语言调用库的头文件)
+2、使用random模块调用randint（a，b）方法，会得到a-b之间的随机整数
+random.randint(1,3)

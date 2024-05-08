@@ -1,0 +1,9 @@
+模块（module） 包（package） 库（library）
+
+模块（module）
+模块是一个.py文件，他存储着函数和类
+包（package）
+包是一个文件夹，里面包含了多个.py（模块）文件
+库（library）
+库包含了多个包
+pip instell XXX 这种就是就是安装库 conda就是一个库
