@@ -6,3 +6,6 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+#忽略脚本测试这个文件夹
+脚本测试/
