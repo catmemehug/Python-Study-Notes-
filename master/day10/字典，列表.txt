@@ -1,0 +1,100 @@
+### Python 数组和字典的语法说明
+
+在 Python 中，数组和字典是两种常用的数据结构，分别用于存储有序和无序的数据集合。
+
+#### 一、数组（列表）
+
+1. **定义数组**
+
+   - **描述**：数组在 Python 中通常使用列表（`list`）来表示，是有序的可变集合，可以包含不同类型的元素。
+   - **语法**：
+
+     ```python
+     # 创建一个列表
+     fruits = ["apple", "banana", "cherry"]
+     ```
+
+2. **访问数组元素**
+
+   - **描述**：使用索引访问列表中的元素，索引从 `0` 开始。
+   - **语法**：
+
+     ```python
+     print(fruits[0])  # 输出: apple
+     ```
+
+3. **修改数组元素**
+
+   - **描述**：可以通过索引修改列表中的元素。
+   - **语法**：
+
+     ```python
+     fruits[1] = "blueberry"
+     print(fruits)  # 输出: ['apple', 'blueberry', 'cherry']
+     ```
+
+4. **添加和删除元素**
+
+   - **描述**：使用 `append()` 方法添加元素，使用 `remove()` 方法删除元素。
+   - **语法**：
+
+     ```python
+     fruits.append("orange")  # 添加元素
+     print(fruits)  # 输出: ['apple', 'blueberry', 'cherry', 'orange']
+     fruits.remove("apple")  # 删除元素
+     print(fruits)  # 输出: ['blueberry', 'cherry', 'orange']
+     ```
+
+#### 二、字典
+
+1. **定义字典**
+
+   - **描述**：字典（`dict`）是一种无序的键值对集合，键必须是唯一的。
+   - **语法**：
+
+     ```python
+     # 创建一个字典
+     person = {
+         "name": "Alice",
+         "age": 25,
+         "city": "New York"
+     }
+     ```
+
+2. **访问字典元素**
+
+   - **描述**：使用键访问字典中的值。
+   - **语法**：
+
+     ```python
+     print(person["name"])  # 输出: Alice
+     ```
+
+3. **修改字典元素**
+
+   - **描述**：可以通过键修改字典中的值。
+   - **语法**：
+
+     ```python
+     person["age"] = 26
+     print(person)  # 输出: {'name': 'Alice', 'age': 26, 'city': 'New York'}
+     ```
+
+4. **添加和删除元素**
+
+   - **描述**：可以直接通过键添加新键值对，使用 `del` 删除指定键值对。
+   - **语法**：
+
+     ```python
+     person["email"] = "alice@example.com"  # 添加新键值对
+     print(person)  # 输出: {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'alice@example.com'}
+     del person["city"]  # 删除指定键值对
+     print(person)  # 输出: {'name': 'Alice', 'age': 26, 'email': 'alice@example.com'}
+     ```
+
+### 总结
+
+- **数组（列表）**：有序的可变集合，可以包含不同类型的元素。
+- **字典**：无序的键值对集合，键必须唯一。
+
+这两种数据结构在 Python 编程中非常常用，灵活且易于操作，适用于多种场景。
